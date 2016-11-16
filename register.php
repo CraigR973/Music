@@ -35,7 +35,7 @@ and open the template in the editor.
     <body>
         <div>
             <h1>Register</h1>
-            <form name="registerForm" onsubmit="return validateForm()" method="post">
+            <form name="registerForm"  onsubmit="return validateForm()" method="post">
                 
                     Name <input type="text" name="name"/> <br/>
                     Password <input type="password" name="pw"/> <br/>
@@ -77,7 +77,7 @@ and open the template in the editor.
                 echo "<p>You've successfully registered</p>";
                 ?>
                 
-                <form action="main.php" method="post">
+                <form action="home2.php" method="post">
                         <input type="submit" value="Proceed"/>
                     </form>
                         
