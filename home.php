@@ -6,29 +6,28 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Tennis Tournament</title>
+        <title>Music Society Manager</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Style.css"/>
     </head>
     <body>
         <div>
             <h1>Music Society Manager</h1>
             
             
+            <h2>Welcome to the Strathclyde Music Society</h2>
+            
+            <p>Please login or register</p>
             
             
             
             
-            
-            
-            
-            <form action="resister.php" method="post">
-            <input type="submit" name="submit" value="Coaches"/>
+            <form action="register.php" method="post">
+            <input type="submit" name="submit" value="Register"/>
             </form>
             
             <form action="StatusPage.php" method="post">
-            <input type="submit" name="submit" value="Parents"/>
+            <input type="submit" name="submit" value="Login"/>
             </form>
             
            
