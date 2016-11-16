@@ -36,7 +36,7 @@ and open the template in the editor.
 
             //setup variables from $_POST
             $name = isset($_POST["name"]) ? $conn->real_escape_string($_POST["name"]) : "";
-            $password = isset($_POST["password"]) ? $conn->real_escape_string($_POST["password"]) : "";
+            $pw = isset($_POST["password"]) ? $conn->real_escape_string($_POST["password"]) : "";
 
             //check form is valid
             if (empty($name)) {
@@ -52,7 +52,13 @@ and open the template in the editor.
             
             if ($conn->query($sql) === TRUE) {
                 echo "<p>You've successfully registered</p>";
-            } else {
+                ?>
+                
+                <form action="main.php" method="post">
+                        <input type="submit" value="Proceed"/>
+                    </form>
+                        
+      <?php      } else {
                 die("Error on insert" . $conn->error);
             }
             ?>

@@ -21,7 +21,9 @@ and open the template in the editor.
             
             
             
-            <form action="user.php" method="post">
+            
+            
+            <form action="resister.php" method="post">
             <input type="submit" name="submit" value="Coaches"/>
             </form>
             
