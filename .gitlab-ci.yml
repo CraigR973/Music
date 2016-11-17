@@ -1,6 +1,7 @@
 image: strathcis/ubuntu-java:2016.0
 master:
   script:
+  - ls
   - chown -hR 2878:1095 .
   - chmod -R 600 .
   - find . -type d -exec chmod u+x {} \;
