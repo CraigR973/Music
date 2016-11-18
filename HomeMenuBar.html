@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Strathclyde Music</title>
+    
+    
 <style>
+    body{
+        background-color: lightgray;
+    }
 ul {
     list-style-type: none;
     margin: 0;
@@ -27,6 +33,33 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+h2{
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 0.01cm;
+    
+}
+
+p{
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: gray;
+    
+   
+}
+
+form{
+    text-align: right;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: gray;
+}
 </style>
 </head>
 <body>
@@ -36,11 +69,15 @@ li a:hover {
   <li><a href="news.php">News</a></li>
   <li><a href="contact.php">Contact</a></li>
   <li><a href="about.php">About</a></li>
+  <li><a href="login.php">Login</a></li>
+  <li><a href="register.php">Register</a></li>
 </ul>
     
-    <div>
+    <div style="background-color: white;">
+        
         <h2>Welcome to the Strathclyde Music Society</h2>
-    </div>
+        
+    
     
     <p id="date"></p>
     
@@ -50,6 +87,13 @@ li a:hover {
         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         document.getElementById("date").innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()];
         </script>
+    </div>
+        
+        <p><img src="15058610_1379894388689484_245722395_n.jpg" alt="Picture" style="width:700px;" align="middle"></p>
+        
+        
+        
+        
 
 </body>
 </html>
