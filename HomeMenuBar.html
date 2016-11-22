@@ -49,6 +49,7 @@ p{
     font-weight: 300;
     font-size: 20px;
     color: gray;
+    margin-bottom: 40px;
     
    
 }
@@ -60,6 +61,9 @@ form{
     font-size: 20px;
     color: gray;
 }
+
+
+
 </style>
 </head>
 <body>
@@ -69,8 +73,7 @@ form{
   <li><a href="news.php">News</a></li>
   <li><a href="contact.php">Contact</a></li>
   <li><a href="about.php">About</a></li>
-  <li><a href="login.php">Login</a></li>
-  <li><a href="register.php">Register</a></li>
+  <li><a target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
 </ul>
     
     <div style="background-color: white;">
@@ -88,13 +91,22 @@ form{
         document.getElementById("date").innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()];
         </script>
     </div>
-        
-        <p><img src="15058610_1379894388689484_245722395_n.jpg" alt="Picture" style="width:700px;" align="middle"></p>
-        
-        <div style="align-content: center;">        
+    
+  
+   <span style="float: left; padding-bottom: 10px; width: 100%;">
+       <a href="login.php">Login</a>
+       <a href="register.php">Register</a>
+            
+    </span>
+    
+    <div>
+        <p><img src="15058610_1379894388689484_245722395_n.jpg" alt="Picture" style="width:700px; float: left;"></p>
+    </div>
+    
+        <span style="float: right; width: 40%;">        
  <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial">Tweets by SUCBOfficial</a> 
  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        </span>
 
 </body>
 </html>
