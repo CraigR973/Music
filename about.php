@@ -10,8 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        
+
         <style>
     body{
         background-color: lightgray;
@@ -69,7 +68,6 @@ form{
     color: gray;
 }
 </style>
-</head>
 <body>
 
 <ul>
