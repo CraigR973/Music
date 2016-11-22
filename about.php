@@ -13,7 +13,7 @@ and open the template in the editor.
 
         <style>
     body{
-        background-color: lightgray;
+        background-color: #ededed;
     }
 ul {
     list-style-type: none;
