@@ -104,7 +104,7 @@ form{
     </div>
     
     <div>
-        <p><img src="15058610_1379894388689484_245722395_n.jpg" alt="Picture" style="width:35%; float: left; margin-left: 20%"></p>
+        <p><img src="sucb_kelvingrove.jpg" alt="Picture" style="width:35%; float: left; margin-left: 20%"></p>
     </div>
     
         <span style="float: right; width: 20%; margin-right: 20%; height: 20%;">        
