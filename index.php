@@ -109,11 +109,13 @@ input[type=submit] {
   <li><a href="about.php">About</a></li>
   <li><a target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
   <li><a target="_blank" title="SUCB SoundCloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB SoundCloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a></li>
-  <form method="post" action="search.php?go" id="searchsite">
-      <input type="text" name="name">
-      <input type="submit" name="submit" value="Search">
-  </form>
+  <li>
+      <form method="post" action="search.php?go" id="searchsite">
+            <input type="text" name="name">
+            <input type="submit" name="submit" value="Search">
+      </form>
   <!-- <button onclick="searchFunction()">Search</button> -->
+    </li>
 
 </ul>
     
