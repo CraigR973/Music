@@ -46,8 +46,8 @@ and open the template in the editor.
                     Password <input type="password" name="pw"/> <br/>
                     Confirm password <input type="password" name="ConfirmPassword"/> <br/>
                     
-                    Section <select name="section"> 
-                        <option value='' selected disabled> Please pick your instrument section
+                    Instrument <select name="instrument"> 
+                        <option value='' selected disabled>Select
                         <option value = "1"</option> Conductor
                         <option value = "2"</option> Flute
                         <option value = "3"</option> Oboe

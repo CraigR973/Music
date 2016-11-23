@@ -34,6 +34,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-top: 10px;
     
 }
 
@@ -71,6 +72,30 @@ form{
     color: gray;
 }
 
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 20px;
+}
+
+input[type=submit] {
+    margin-right: 30%;
+    background-color: white;
+    padding: 6px 10px 6px 20px;
+}
+
+
+
 
 
 </style>
@@ -84,7 +109,21 @@ form{
   <li><a href="about.php">About</a></li>
   <li><a target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
   <li><a target="_blank" title="SUCB Soundcloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB Soundcloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a></li>
+  <form method="post" action="search.php?go" id="searchsite">
+      <input type="text" name="name">
+      <input type="submit" name="submit" value="Search">
+  </form>
+  <!-- <button onclick="searchFunction()">Search</button> -->
 </ul>
+    
+  <!--  <p id="demo2"></p>
+    
+    <script>
+        function searchFunction() {
+            var x = document.getElementById("mySearch").innerHTML;
+            document.getElementById("demo2").innerHTML = x;
+        }
+        </script> -->
     
     <div style="background-color: white; float: left; width: 100%; margin-bottom: 0.5cm;">
         
@@ -103,7 +142,7 @@ form{
         document.getElementById("date").innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()];
         </script>
       
-        <div style="float: right; padding-right: 30%;">
+        <div style="float: right; padding-right: 20%;">
         <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
        <a href="login.php">Login</a>
        <a href="register.php">Register</a>
