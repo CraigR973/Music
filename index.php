@@ -100,7 +100,7 @@
     <body>
 
         <ul>
-            <li><a class="active" href="index.php" style="font-size: 40px;">SUBC</a></li>
+            <li><a class="active" href="index.php" style="font-size: 40px; background-color: black; ">SUBC</a></li>
             <li><a style="padding-top: 23px;" href="news.php">News</a></li>
             <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
             <li><a style="padding-top: 23px;" href="about.php">About</a></li>
