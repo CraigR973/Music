@@ -38,6 +38,10 @@ li a {
     
 }
 
+
+
+
+
 li a:hover {
     text-decoration: underline;
     
@@ -86,12 +90,13 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     margin-top: 20px;
+ 
 }
 
 input[type=submit] {
-    margin-right: 30%;
     background-color: white;
     padding: 6px 10px 6px 20px;
+    
 }
 
 
@@ -103,15 +108,14 @@ input[type=submit] {
 <body>
 
 <ul>
-  <li><a class="active" href="index.php">Home</a></li>
-  <li><a href="news.php">News</a></li>
-  <li><a href="contact.php">Contact</a></li>
-  <li><a href="about.php">About</a></li>
-  <li><a target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
-  <li><a target="_blank" title="SUCB SoundCloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB SoundCloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a></li>
+  <li><a class="active" href="index.php" style="font-size: 40px;">SUBC</a></li>
+  <li><a style="padding-top: 23px;" href="news.php">News</a></li>
+  <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
+  <li><a style="padding-top: 23px;" href="about.php">About</a></li>
+  
   <li>
       <form method="post" action="search.php?go" id="searchsite">
-            <input type="text" name="name">
+          <input type="text" name="search" title="search" style="margin-left: 480px;">
             <input type="submit" name="submit" value="Search">
       </form>
   <!-- <button onclick="searchFunction()">Search</button> -->
@@ -163,6 +167,11 @@ input[type=submit] {
  <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="675">Tweets by SUCBOfficial</a> 
  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </span>
+    
+    <footer style="margin-top: 800px; margin-left: 20%; ">
+        <a  style="padding-right: 10px;" target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
+  <a target="_blank" title="SUCB SoundCloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB SoundCloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a>
+    </footer>
 
 </body>
 </html>
