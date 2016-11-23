@@ -11,6 +11,7 @@ and open the template in the editor.
                 var x =document.forms["registerForm"]["name"];
                 var y =document.forms["registerForm"]["pw"];
                 var z =document.forms["registerForm"]["ConfirmPassword"];
+                var i =document.forms["registerForm"]["section"];
                 var errs ="";
                 x.style.background = "white"; y.style.background = "white"; z.style.background = "white";
                 if(x.value===null || x.value==="") {
@@ -22,6 +23,9 @@ and open the template in the editor.
                 if(y.value !== z.value) {
                     errs+="Your passwords do not macth\n"; z.style.background = "red";
                 }
+                if(i.value===null || i.value==="") {
+                    errs+="You must proivde your section\n"; i.style.background = "red";
+                }
                 if(errs !== "") {
                     alert(errs);
                 }
@@ -31,6 +35,7 @@ and open the template in the editor.
         <title>Insert into database</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="music_style.css"/>
     </head>
     <body>
         <div>
@@ -40,7 +45,27 @@ and open the template in the editor.
                     Name <input type="text" name="name"/> <br/>
                     Password <input type="password" name="pw"/> <br/>
                     Confirm password <input type="password" name="ConfirmPassword"/> <br/>
-                    <input type="submit"/>
+                    
+                    Section <select name="section"> 
+                        <option value='' selected disabled> Please pick your instrument section
+                        <option value = "1"</option> Conductor
+                        <option value = "2"</option> Flute
+                        <option value = "3"</option> Oboe
+                        <option value = "4"</option> Bassoon
+                        <option value = "5"</option> Clarinet
+                        <option value = "6"</option> Saxophone
+                        <option value = "7"</option> Trumpet
+                        <option value = "8"</option> Horn
+                        <option value = "9"</option> Trombone
+                        <option value = "10"</option> Euphonium
+                        <option value = "11"</option> Tuba
+                        <option value = "12"</option> String Bass
+                        <option value = "13"</option> Percussion
+                        <option value = "14"</option> Keyboard
+                        
+                    </select>
+                        
+                        <input type="submit"/>
                 
             </form>
             
@@ -63,14 +88,14 @@ and open the template in the editor.
 
             //check form is valid
             if (empty($name)) {
-                die("You need to provide a name");
+                die("You need to provide a name along with a password and section");
             }
 
 
 
             //create the sql query and run it
-            $sql = "INSERT INTO `Users` (`id`, `name`, `password`) VALUES "
-                    . "(NULL, '$name', '$pw')";
+            $sql = "INSERT INTO `Users` (`id`, `name`, `password`, `instrument`) VALUES "
+                    . "(NULL, '$name', '$pw', '$section')";
 
             
             if ($conn->query($sql) === TRUE) {
