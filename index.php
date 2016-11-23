@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Strathclyde Music</title>
+    <link rel="icon"
+          type="image/jpeg"
+          href="HeaderLogo.jpg">
+    <title>SUCB</title>
     
-    <!-- checking this works at home -->
+    
 <style>
     body{
         background-color: #fafafa;
@@ -16,6 +19,9 @@ ul {
     background-color: #C12828;
     text-color: white;
     font-size: 24px;
+    padding-left: 20%;
+
+   
 }
 
 li {
@@ -28,10 +34,12 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 li a:hover {
-    background-color: #111;
+    text-decoration: underline;
+    
 }
 
 h2{
@@ -40,6 +48,7 @@ h2{
     font-weight: 300;
     font-size: 30px;
     margin-bottom: 0.01cm;
+    margin-left: 20%;
     
 }
 
@@ -74,9 +83,10 @@ form{
   <li><a href="contact.php">Contact</a></li>
   <li><a href="about.php">About</a></li>
   <li><a target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
+  <li><a target="_blank" title="SUCB Soundcloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB Soundcloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a></li>
 </ul>
     
-    <div style="background-color: white; float: left; width: 100%;">
+    <div style="background-color: white; float: left; width: 100%; margin-bottom: 0.5cm;">
         
         <h2>Welcome to the Strathclyde University Concert Band</h2>
         
@@ -84,7 +94,7 @@ form{
         
     
     
-        <p id="date" style="float: left;"></p>
+        <p id="date" style="float: left; margin-left: 20%;"></p>
     
     <script>
         var d = new Date();
