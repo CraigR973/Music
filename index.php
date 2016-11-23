@@ -140,28 +140,28 @@
 
             <div style="float: right; padding-right: 20%;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
-                    <a href="login.php">Login</a>
-                    <a href="register.php">Register</a>
+                    <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUBC ID or
+                    <a style="color: blue; text-decoration: none;"  href="register.php">Register</a> to see band events
                 </span>
             </div>
 
         </div>
 
-        <div style="margin-left: 10%; margin-right: 10%; display: inline-flex; justify-content: space-between">
+        <div style="margin-left: 15%; margin-right: 15%; display: inline-flex; justify-content: space-between">
             <div style="max-width: 70%">
-                <p><img src="sucb_kelvingrove.jpg" alt="Picture" style="max-width: 70%"></p>
-                <p>Beloved loves knows most enlightenments. Tobaccos sing from loves like mighty captains. Potus
+                <p><img src="sucb_kelvingrove.jpg" alt="Picture" style="max-width: 80%"></p>
+                <p style="margin-right: 15%; margin-left: 15%;"> Beloved loves knows most enlightenments. Tobaccos sing from loves like mighty captains. Potus
                     superbe ducunt ad castus brodium. With asparagus drink peanut sauce. Tightly examine a
                     hur'q.</p>
             </div>
 
-            <div style="max-width: 30%">
-                <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="675">Tweets by
+            <div style="max-width: 30%; margin-right: 5%;">
+                <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="600" data-width="400">Tweets by
                     SUCBOfficial</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
-        <footer style="margin-top: 800px; margin-left: 20%; ">
+        <footer style="margin-bottom: 40px; margin-left: 20%; ">
             <a style="padding-right: 10px;" target="_blank" title="SUCB Facebook Page"
                href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page"
                                                                                         src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png"
