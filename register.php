@@ -94,6 +94,7 @@ and open the template in the editor.
                 //setup variables from $_POST
                 $name = isset($_POST["name"]) ? $conn->real_escape_string($_POST["name"]) : "";
                 $pw = isset($_POST["pw"]) ? $conn->real_escape_string($_POST["pw"]) : "";
+                $section = isset($_POST["section"]) ? $conn->real_escape_string($_POST["section"]) : "";
 
                 //check form is valid
                 if (empty($name)) {
@@ -102,7 +103,7 @@ and open the template in the editor.
 
 
                 //create the sql query and run it
-                $sql = "INSERT INTO `Users` (`id`, `name`, `password`, `instrument`) VALUES "
+                $sql = "INSERT INTO `Users` (`id`, `name`, `password`, `instrument_id`) VALUES "
                     . "(NULL, '$name', '$pw', '$section')";
 
 
