@@ -14,13 +14,13 @@ and open the template in the editor.
                 var errs ="";
                 x.style.background = "white"; y.style.background = "white"; z.style.background = "white";
                 if(x.value===null || x.value==="") {
-                    errs+="You must proivde a name\n"; x.style.background = "red";
+                    errs+="You must provide a name\n"; x.style.background = "red";
                 }
                 if(y.value===null || y.value==="") {
-                    errs+="You must proivde a password\n"; y.style.background = "red";
+                    errs+="You must provide a password\n"; y.style.background = "red";
                 }
                 if(y.value !== z.value) {
-                    errs+="Your passwords do not macth\n"; z.style.background = "red";
+                    errs+="Your passwords do not match\n"; z.style.background = "red";
                 }
                 if(errs !== "") {
                     alert(errs);
@@ -48,14 +48,14 @@ and open the template in the editor.
             <?php
             //connect to the database now that we know we have enough to submit
 
-            $servername = "devweb2016.cis.strath.ac.uk";
+            $server_name = "devweb2016.cis.strath.ac.uk";
             $username = "cs312l";
             $password = "eiDo8re9Ex1O";
             $database = "cs312l";
-            $conn = new mysqli($servername, $username, $password, $database);
+            $conn = new mysqli($server_name, $username, $password, $database);
 
             if ($conn->connect_error) {
-                die("Connection failed:" . $conn->connect_error); //FIXME remove after debugging - secirity risk
+                die("Connection failed:" . $conn->connect_error); //FIXME remove after debugging - security risk
             }
 
             //setup variables from $_POST

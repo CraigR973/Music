@@ -17,7 +17,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #C12828;
-    text-color: white;
+    color: white;
     font-size: 24px;
     padding-left: 20%;
 
@@ -83,7 +83,7 @@ form{
   <li><a href="contact.php">Contact</a></li>
   <li><a href="about.php">About</a></li>
   <li><a target="_blank" title="SUCB Facebook Page" href="https://en-gb.facebook.com/StrathclydeUniversityConcertBand/"><img alt="SUCB Facebook Page" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
-  <li><a target="_blank" title="SUCB Soundcloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB Soundcloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a></li>
+  <li><a target="_blank" title="SUCB SoundCloud" href="https://soundcloud.com/sucb-2"><img alt="SUCB SoundCloud" src="http://icons.iconarchive.com/icons/danleech/simple/32/soundcloud-icon.png" border=0></a></li>
 </ul>
     
     <div style="background-color: white; float: left; width: 100%; margin-bottom: 0.5cm;">
