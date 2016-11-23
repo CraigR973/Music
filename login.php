@@ -36,13 +36,13 @@ and open the template in the editor.
     <body>
         <div>
             <h1>Register</h1>
-            <form name="registerForm"  onsubmit="return validateForm()" method="post">
-                
-                    Name <input type="text" name="name"/> <br/>
-                    Password <input type="password" name="pw"/> <br/>
-                    Confirm password <input type="password" name="ConfirmPassword"/> <br/>
-                    <input type="submit"/>
-                
+            <form name="login" onsubmit="return validateForm()" method="post">
+
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text"/> <br/>
+                <label for="password">Password</label>
+                <input id="password" name="pw" type="password"/> <br/>
+
             </form>
             
             <?php
