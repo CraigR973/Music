@@ -77,7 +77,7 @@ and open the template in the editor.
                 echo "<p>You've successfully registered</p>";
                 ?>
                 
-                <form action="home2.php" method="post">
+                <form action="home.php" method="post">
                         <input type="submit" value="Proceed"/>
                     </form>
                         
