@@ -24,6 +24,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-top: 10px;
     
 }
 
@@ -54,10 +55,33 @@ p{
 }
 
 form{
-    text-align: left;
+    text-align: right;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: gray;
     
 }
+
+
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 20px;
+    }
+
+    input[type=submit] {
+     background-color: white;
+     padding: 6px 10px 6px 20px;
+    }

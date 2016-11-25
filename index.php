@@ -6,49 +6,12 @@
               href="HeaderLogo.jpg">
         <title>SUCB</title>
 
-
-        <style>
-
-            li a {
-                margin-top: 10px;
-            }
-
-
-            form {
-                text-align: right;
-            }
-
-            input[type=text] {
-                width: 200px;
-                box-sizing: border-box;
-                border: 2px solid #ccc;
-                border-radius: 4px;
-                font-size: 16px;
-                background-color: white;
-                background-image: url('searchicon.png');
-                background-position: 10px 10px;
-                background-repeat: no-repeat;
-                padding: 6px 10px 6px 20px;
-                -webkit-transition: width 0.4s ease-in-out;
-                transition: width 0.4s ease-in-out;
-                margin-top: 20px;
-
-            }
-
-            input[type=submit] {
-                background-color: white;
-                padding: 6px 10px 6px 20px;
-
-            }
-
-
-        </style>
         <link rel="stylesheet" href="music_style.css">
     </head>
     <body>
 
         <ul>
-            <li><a class="active" href="index.php" style="font-size: 40px; background-color: black; ">SUBC</a></li>
+            <li><a class="active" href="index.php" style="font-size: 40px; background-color: black; ">SUCB</a></li>
             <li><a style="padding-top: 23px;" href="news.php">News</a></li>
             <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
             <li><a style="padding-top: 23px;" href="about.php">About</a></li>
@@ -88,7 +51,7 @@
 
             <div style="float: right; padding-right: 20%;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
-                    <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUBC ID or
+                    <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUCB ID or
                     <a style="color: blue; text-decoration: none;"  href="register.php">Register</a> to see band events
                 </span>
             </div>
@@ -101,6 +64,7 @@
                 <p style="margin-right: 15%; margin-left: 15%;"> Beloved loves knows most enlightenments. Tobaccos sing from loves like mighty captains. Potus
                     superbe ducunt ad castus brodium. With asparagus drink peanut sauce. Tightly examine a
                     hur'q.</p>
+                
             </div>
 
             <div style="max-width: 30%; margin-right: 5%;">

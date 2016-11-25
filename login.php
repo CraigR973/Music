@@ -57,7 +57,7 @@ and open the template in the editor.
             //setup variables from $_POST
             $name = isset($_POST["name"]) ? $conn->real_escape_string($_POST["name"]) : "";
             $pw = isset($_POST["pw"]) ? $conn->real_escape_string($_POST["pw"]) : "";
-
+            
             //check form is valid
             if (empty($name)) {
                 die("You need to provide your name");
@@ -74,8 +74,12 @@ and open the template in the editor.
                     ?>
 
                     <form action="index.php" method="post">
-                        <input type="submit" value="Proceed"/>
+                        <?php
+                            echo 'Username: '.$name;
+                            echo '<input type="submit" value"proceed"/>';
+                        ?>
                     </form>
+
 
                 <?php } else {
                     die("Details incorrect: Please check your username and password." . $conn->error);
