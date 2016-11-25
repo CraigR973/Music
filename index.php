@@ -8,67 +8,14 @@
 
 
         <style>
-            body {
-                background-color: #fafafa;
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #C12828;
-                color: white;
-                font-size: 24px;
-                padding-left: 20%;
-
-            }
-
-            li {
-                float: left;
-            }
 
             li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
                 margin-top: 10px;
-
             }
 
-            li a:hover {
-                text-decoration: underline;
-
-            }
-
-            h2 {
-                text-align: left;
-                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                font-weight: 300;
-                font-size: 30px;
-                margin-bottom: 0.01cm;
-                margin-left: 20%;
-
-            }
-
-            p {
-                text-align: center;
-                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                font-weight: 300;
-                font-size: 20px;
-                color: gray;
-                margin-bottom: 40px;
-
-            }
 
             form {
                 text-align: right;
-                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                font-weight: 300;
-                font-size: 20px;
-                color: gray;
             }
 
             input[type=text] {
@@ -96,6 +43,7 @@
 
 
         </style>
+        <link rel="stylesheet" href="music_style.css">
     </head>
     <body>
 
