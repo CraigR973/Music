@@ -39,9 +39,8 @@
 
                 if ($result->num_rows == 1) {                   
                     $row = mysqli_fetch_row($result); 
-                        echo array_values($row)[0];
-                        echo array_values($result)[0];
-                        echo $row[4];  
+                        $path = array_values($row)[0];
+                        echo '<a href="<'.$$path.'>">Text</a>';
                 }else{
                     echo '<p>There is no piece for your instrument yet</p>';
                 }
