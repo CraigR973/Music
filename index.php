@@ -77,7 +77,7 @@
         <div style="margin-left: 15%; margin-right: 15%; display: inline-flex; justify-content: space-between">
             <div style="max-width: 70%">
                 <p><img src="sucb_kelvingrove.jpg" alt="Picture" style="max-width: 80%"></p>
-                <p style="margin-right: 15%; margin-left: 15%;"> Beloved loves knows most enlightenments. Tobaccos sing from loves like mighty captains. Potus superbe ducunt ad castus brodium. With asparagus drink peanut sauce. Tightly examine a hur'q.</p>
+                <p style="margin-right: 15%; margin-left: 15%;"> The University of Strathclyde Concert Band is open to all players of woodwind, brass, percussion and string bass without audition.</p>
 
             </div>
 
