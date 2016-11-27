@@ -21,8 +21,6 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <h1>Upcoming pieces for your instrument:</h1>
-
             <?php
 
                 //connect to the database
@@ -37,14 +35,16 @@ and open the template in the editor.
                     die("Connection failed:" . $conn->connect_error); //FIXME remove after debugging - security risk
                 }
 
-                $inst = 1; //Change this out to get the users instrument id
+                $inst = 1; //Change this out to get the users instrument id with sessions
 
                 $sql = "SELECT `file_location` FROM `Parts` WHERE `instument_id` = '$inst'";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows >= 1) {
-                    echo '<p>' . $result . '</p>';
-                } else {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        print_r ($row);
+                    }
+                }else{
                     echo '<p>There are no pieces for your instrument yet</p>';
                 }
             ?>
