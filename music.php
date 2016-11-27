@@ -98,13 +98,15 @@ and open the template in the editor.
                 $result = $conn->query($sql);
 
                 if ($result->num_rows >= 1) {
+                    echo "<ul>";
                     for ($i = 0; $i < mysqli_num_rows($result); $i++) {
                         $row = mysqli_fetch_row($result);
                         $partName = array_values($row)[0];
                         $path = array_values($row)[1];
                         echo /** @lang HTML */
-                        '<a href="' . $path . '">' . $partName . '</a>';
+                        "<li><a href='$path'>$partName</a></li>";
                     }
+                    echo "</ul>";
                 } else {
 
                     echo $inst <= 0 ?
