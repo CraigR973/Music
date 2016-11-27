@@ -11,18 +11,20 @@
     <body>
 
         <ul>
-            <li><a class="active" href="index.php" style="font-size: 40px; background-color: black; ">SUCB</a></li>
+            <li><a class="active" href="index.php" style="font-size: 40px;">SUCB</a></li>
             <li><a style="padding-top: 23px;" href="news.php">News</a></li>
             <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
             <li><a style="padding-top: 23px;" href="about.php">About</a></li>
-
-            <li>
+            
+            
+            
+            <li><a style="padding-top: 23px;">
                 <form method="post" action="search.php?go" id="searchsite">
-                    <input type="text" name="search" title="search" style="margin-left: 480px;">
+                    <input type="text" name="search" title="search" style="margin-left: 100px;">
                     <input type="submit" name="submit" value="Search">
                 </form>
                 <!-- <button onclick="searchFunction()">Search</button> -->
-            </li>
+                </a></li>
 
         </ul>
 
@@ -40,7 +42,7 @@
                 document.getElementById("date").innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()];
             </script>
 
-            <div style="float: right; padding-right: 20%;">
+            <div style="float: right; padding-right: 20%; padding-top: 30px; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
                     <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUCB ID or
                     <a style="color: blue; text-decoration: none;" href="register.php">Register</a> to see band events
