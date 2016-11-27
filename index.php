@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["session_user"])) {
+        $user = $_SESSION["session_user"];
+    } else {
+        $user = "";
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -44,8 +53,17 @@
 
             <div style="float: right; padding-right: 20%; padding-top: 30px; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
-                    <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUCB ID or
-                    <a style="color: blue; text-decoration: none;" href="register.php">Register</a> to see band events
+                    <?php
+                        if ($user === "") {
+                            echo /** @lang HTML */
+                            "<a style='color: blue; text-decoration: none;' href='login.php'>Sign in</a> with your SUCB ID or
+                             <a style='color: blue; text-decoration: none;' href='register.php'>Register</a> to see band events";
+                        } else {
+                            echo /** @lang HTML */
+                            "Welcome back, $user!";
+                        }
+                    ?>
+
                 </span>
             </div>
 
@@ -59,7 +77,8 @@
             </div>
 
             <div style="max-width: 30%; margin-right: 5%;">
-                <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="600" data-width="400">Tweets by SUCBOfficial</a>
+                <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="600"
+                   data-width="400">Tweets by SUCBOfficial</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>

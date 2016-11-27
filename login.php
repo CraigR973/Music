@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (isset($_SESSION["session_user"])) {
+    $user = $_SESSION["session_user"];
+} else {
+    $user = "";
+}
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -82,6 +91,7 @@ and open the template in the editor.
                 $result = $conn->query($sql);
 
                 if ($result->num_rows == 1) {
+                    $_SESSION["session_user"] = $username;
                     echo "<p>You've successfully logged in</p>";
 
                     ?>

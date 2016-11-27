@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["session_user"])) {
+        $user = $_SESSION["session_user"];
+    } else {
+        $user = "";
+    }
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
