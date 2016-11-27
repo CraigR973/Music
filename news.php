@@ -79,17 +79,23 @@ and open the template in the editor.
                             "Welcome back, $user";
                         }
                     ?>
-
                 </span>
             </div>
-            
-        </div>
 
-        <div style="max-width: 30%; margin-right: 5%;">
+        </div>
+        <h2>News</h2>
+        <div>
+
+            <div style="max-width: 30%; margin-right: 5%;">
                 <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="600"
                    data-width="400">Tweets by SUCBOfficial</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-        
+            <?php
+                if ($user !== "") {
+                    echo '<iframe src="https://calendar.google.com/calendar/embed?src=strathclydeuniconcertband%40gmail.com&ctz=Europe/London" style="border: 0" width="400" height="600" frameborder="0" scrolling="no"></iframe>';
+                }
+            ?>
+        </div>
     </body>
 </html>
