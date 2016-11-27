@@ -8,11 +8,7 @@
     }
 ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Pieces</title>
@@ -21,6 +17,7 @@ and open the template in the editor.
     </head>
     <body>
         <div>
+            <h1>Upcoming music:</h1>
             <?php
 
                 //connect to the database
@@ -41,11 +38,9 @@ and open the template in the editor.
                 $result = $conn->query($sql);
 
                 if ($result->num_rows >= 1) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        print_r ($row);
-                    }
+                        print_r ($result);        
                 }else{
-                    echo '<p>There are no pieces for your instrument yet</p>';
+                    echo '<p>There is no piece for your instrument yet</p>';
                 }
             ?>
 
