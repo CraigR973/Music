@@ -102,7 +102,10 @@ and open the template in the editor.
                 $result = $conn->query($sql);
 
                 if ($result->num_rows == 1) {
-                    $_SESSION["session_user"] = $username;
+                    $row = mysqli_fetch_row($result);
+                    $_SESSION["session_user"] = array_values($row)[1];
+                    $_SESSION["session_name"] = array_values($row)[2];
+                    $_SESSION["session_instrument_id"] = array_values($row)[4];
                     echo "<p>You've successfully logged in</p>";
 
                     ?>

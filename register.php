@@ -151,6 +151,8 @@ and open the template in the editor.
 
                 if ($conn->query($sql) === TRUE) {
                     $_SESSION["session_user"] = $username;
+                    $_SESSION["session_name"] = $name;
+                    $_SESSION["session_instrument_id"] = $section;
                     echo "<p>You've successfully registered</p>";
                     ?>
 

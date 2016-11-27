@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["session_user"])) {
+        $user = $_SESSION["session_user"];
+    } else {
+        $user = "";
+    }
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -9,7 +18,7 @@ and open the template in the editor.
         <title>Music</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="music_style.css"/>
+        <link rel="stylesheet" href="music_style.css" />
     </head>
     <body>
         <ul>
@@ -59,12 +68,12 @@ and open the template in the editor.
             </div>
 
         </div>
-        
+
         <div>
-            
-        <?php
-        
-        //connect to the database
+
+            <?php
+
+                //connect to the database
 
                 $server_name = "devweb2016.cis.strath.ac.uk";
                 $db_username = "cs312l";
@@ -76,21 +85,23 @@ and open the template in the editor.
                     die("Connection failed:" . $conn->connect_error); //FIXME remove after debugging - security risk
                 }
 
-        $inst = 1; //Change this out to get the users instrument id with sessions
-                
-        $sql = "SELECT `file_location` FROM `Parts` WHERE `instument_id` = '$inst'";
-        $result = $conn->query($sql);
-        
-        if ($result->num_rows >= 1) {        
-            while ($row = mysqli_fetch_assoc($result)) {
-                print_r ($row);
-            }
-        }else{
-            echo '<p>There are no pieces for your instrument yet</p>';
-        }
-        ?>
-           
-            
+                $inst = $_SESSION["session_instrument_id"]; //Change this out to get the users instrument id with sessions
+
+                $sql = "SELECT `name`, `file_location` FROM `Parts` WHERE `instument_id` = '$inst'";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows >= 1) {
+                    for ($i = 0; $i < mysqli_num_rows($result); $i++) {
+                        $row = mysqli_fetch_row($result);
+                        $partName = array_values($row)[0];
+                        $path = array_values($row)[1];
+                        echo /** @lang HTML */
+                        '<a href="' . $path . '">' . $partName . '</a>';
+                    }
+                } else {
+                    echo '<p>There are no pieces available for your instrument yet.</p>';
+                }
+            ?>
         </div>
     </body>
 </html>
