@@ -39,7 +39,9 @@
 
                 if ($result->num_rows == 1) {                   
                     $row = mysqli_fetch_row($result); 
-                        echo $row[5];  
+                        echo array_values($row)[0];
+                        echo array_values($result)[0];
+                        echo $row[4];  
                 }else{
                     echo '<p>There is no piece for your instrument yet</p>';
                 }
