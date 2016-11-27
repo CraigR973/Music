@@ -32,15 +32,18 @@
                     die("Connection failed:" . $conn->connect_error); //FIXME remove after debugging - security risk
                 }
 
-                $inst = 1; //Change this out to get the users instrument id with sessions
+                $inst = $_SESSION["session_instrument_id"]; //Change this out to get the users instrument id with sessions
 
-                $sql = "SELECT `file_location` FROM `Parts` WHERE `instument_id` = '$inst'";
+                $sql = "SELECT `name`, `file_location` FROM `Parts` WHERE `instument_id` = '$inst'";
                 $result = $conn->query($sql);
 
-                if ($result->num_rows == 1) {                   
-                    $row = mysqli_fetch_row($result); 
-                        $path = array_values($row)[0];
-                        echo '<a href="'.$path.'">Text</a>';
+                if ($result->num_rows >= 1) {
+                    for($i = 0; $i < mysqli_num_rows($result); $i++) {
+                        $row = mysqli_fetch_row($result);
+                        $partName = array_values($row)[0];
+                        $path = array_values($row)[1];
+                        echo '<a href="' . $path . '">' . $partName . '</a>';
+                    }
                 }else{
                     echo '<p>There is no piece for your instrument yet</p>';
                 }
