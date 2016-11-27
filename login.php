@@ -1,11 +1,11 @@
 <?php
-session_start();
+    session_start();
 
-if (isset($_SESSION["session_user"])) {
-    $user = $_SESSION["session_user"];
-} else {
-    $user = "";
-}
+    if (isset($_SESSION["session_user"])) {
+        $user = $_SESSION["session_user"];
+    } else {
+        $user = "";
+    }
 ?>
 <!DOCTYPE html>
 <!--
@@ -16,35 +16,32 @@ and open the template in the editor.
 <html>
     <style>
         body {
-            background-image: url("background.jpg");
             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
+            background: url("background.jpg") no-repeat center center;
         }
-        
-        
+
+
     </style>
     <head>
         <script>
             function validateForm() {
                 var usernameInput = document.forms["loginForm"]["username"];
                 var passwordInput = document.forms["loginForm"]["password"];
-                var errs = "";
+                var inputErrors = "";
                 usernameInput.style.background = "white";
                 passwordInput.style.background = "white";
-                z.style.background = "white";
                 if (usernameInput.value === null || usernameInput.value === "") {
-                    errs += "You must provide a username\n";
+                    inputErrors += "You must provide a username\n";
                     usernameInput.style.background = "red";
                 }
                 if (passwordInput.value === null || passwordInput.value === "") {
-                    errs += "You must provide a password\n";
+                    inputErrors += "You must provide a password\n";
                     passwordInput.style.background = "red";
                 }
-                if (errs !== "") {
-                    alert(errs);
+                if (inputErrors !== "") {
+                    alert(inputErrors);
                 }
-                return (errs === "");
+                return (inputErrors === "");
             }
         </script>
         <link rel="icon"
@@ -53,26 +50,29 @@ and open the template in the editor.
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="music_style.css"/>
+        <link rel="stylesheet" href="music_style.css" />
     </head>
     <body>
         <div style="margin-left: 200px; margin-top: 65px; background-color: white; max-width: 400px; padding: 14px 16px; height: 500px;">
-            
+
             <h1>SUCB</h1>
             <h2 style="margin-left: 10px; margin-bottom: 30px;">Sign in</h2>
             <form name="loginForm" onsubmit="return validateForm()" method="post" style="padding-right: 100%">
 
                 <label for="username"></label>
-                <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;"/> <br/>
+                <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;" />
+                <br />
                 <label for="password"></label>
-                <input id="password" name="password" type="password" placeholder="Password" style="margin-bottom: 30px;"/> <br/>
-                <input type="submit" value="Sign in" style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
+                <input id="password" name="password" type="password" placeholder="Password"
+                       style="margin-bottom: 30px;" /> <br />
+                <input type="submit" value="Sign in"
+                       style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
             </form>
-            
+
             <p>Don't have a SUCB account yet?</p>
-            <a href="register.php" style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Register now</a>
-            
-            
+            <a href="register.php"
+               style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Register now</a>
+
 
             <?php
                 //connect to the database now that we know we have enough to submit

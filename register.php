@@ -16,13 +16,11 @@ and open the template in the editor.
 <html>
     <style>
         body {
-            background-image: url("background.jpg");
             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
+            background: url("background.jpg") no-repeat center center;
         }
-        
-        
+
+
     </style>
     <head>
         <script>
@@ -74,7 +72,7 @@ and open the template in the editor.
         <title>Register</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="music_style.css"/>
+        <link rel="stylesheet" href="music_style.css" />
     </head>
     <body>
         <div style="margin-left: 200px; margin-top: 65px; background-color: white; max-width: 400px; padding: 14px 16px; height: 1000px;">
@@ -85,40 +83,45 @@ and open the template in the editor.
             <form name="registerForm" onsubmit="return validateForm()" method="post" style="padding-right: 100%">
 
                 <label for="username"></label>
-                <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;"/> <br/>
+                <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;" />
+                <br />
                 <label for="name"></label>
-                <input id="name" name="name" type="text" placeholder="Name" style="margin-bottom: 30px;"/> <br/>
+                <input id="name" name="name" type="text" placeholder="Name" style="margin-bottom: 30px;" /> <br />
                 <label for="password"></label>
-                <input id="password" name="password" type="password" placeholder="Password" style="margin-bottom: 30px;"/> <br/>
+                <input id="password" name="password" type="password" placeholder="Password"
+                       style="margin-bottom: 30px;" /> <br />
                 <label for="confirm"></label>
-                <input id="confirm" name="confirm_password" type="password" placeholder="Confirm Password" style="margin-bottom: 30px;"/> <br/>
+                <input id="confirm" name="confirm_password" type="password" placeholder="Confirm Password"
+                       style="margin-bottom: 30px;" /> <br />
 
                 <label for="section"><label>
-                <select id="section" name="section">
-                    <option value=0 selected disabled>Instrument</option>
-                    <option value=1>Conductor</option><!-- TODO: Make this require a "master" password-->
-                    <option value=2>Flute</option>
-                    <option value=3>Oboe</option>
-                    <option value=4>Bassoon</option>
-                    <option value=5>Clarinet</option>
-                    <option value=6>Saxophone</option>
-                    <option value=7>Trumpet/Cornet</option>
-                    <option value=8>Horn</option>
-                    <option value=9>Trombone</option>
-                    <option value=10>Euphonium/Baritone</option>
-                    <option value=11>Tuba</option>
-                    <option value=12>String Bass</option>
-                    <option value=13>Percussion</option>
-                    <option value=14>Keyboard/Harp</option>
-                </select>
-                <input type="submit" value="Register" style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
+                        <select id="section" name="section">
+                            <option value=0 selected disabled>Instrument</option>
+                            <option value=1>Conductor</option><!-- TODO: Make this require a "master" password-->
+                            <option value=2>Flute</option>
+                            <option value=3>Oboe</option>
+                            <option value=4>Bassoon</option>
+                            <option value=5>Clarinet</option>
+                            <option value=6>Saxophone</option>
+                            <option value=7>Trumpet/Cornet</option>
+                            <option value=8>Horn</option>
+                            <option value=9>Trombone</option>
+                            <option value=10>Euphonium/Baritone</option>
+                            <option value=11>Tuba</option>
+                            <option value=12>String Bass</option>
+                            <option value=13>Percussion</option>
+                            <option value=14>Keyboard/Harp</option>
+                        </select>
+                        <input type="submit" value="Register"
+                               style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
 
 
             </form>
-            
+
             <p style="width: 200px;">Already registered?</p>
-            <a href="login.php" style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Sign in</a>
-            
+            <a href="login.php"
+               style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Sign in</a>
+
 
             <?php
                 //connect to the database now that we know we have enough to submit
@@ -157,7 +160,7 @@ and open the template in the editor.
                     ?>
 
                     <form action="index.php" method="post">
-                        <input type="submit" value="Proceed"/>
+                        <input type="submit" value="Proceed" />
                     </form>
 
                     <?php

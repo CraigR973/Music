@@ -2,23 +2,22 @@ body {
     background-color: #fafafa;
 }
 
-ul {
+#menu-bar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #C12828;
     color: white;
     font-size: 24px;
-    padding-left: 20%;
+    padding: 0 0 0 20%;
 
 }
 
-li {
+#menu-bar ul li {
     float: left;
 }
 
-li a {
+#menu-bar ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -28,7 +27,7 @@ li a {
 
 }
 
-li a:hover {
+#menu-bar li a:hover {
     text-decoration: underline;
 
 }
@@ -68,17 +67,12 @@ input[type=text] {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    background: white no-repeat 10px 10px;
     padding: 6px 10px 6px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     margin-top: 1px;
 }
-
-
 
 input[type=password] {
     width: 200px;
@@ -86,10 +80,7 @@ input[type=password] {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    background: white no-repeat 10px 10px;
     padding: 6px 10px 6px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -102,10 +93,7 @@ select {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    background: white no-repeat 10px 10px;
     padding: 6px 10px 6px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;

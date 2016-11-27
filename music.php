@@ -21,28 +21,30 @@ and open the template in the editor.
         <link rel="stylesheet" href="music_style.css" />
     </head>
     <body>
-        <ul>
-            <li><a class="active" href="index.php" style="font-size: 40px;">SUCB</a></li>
-            <li><a style="padding-top: 23px;" href="news.php">News</a></li>
-            <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
-            <li><a style="padding-top: 23px;" href="about.php">About</a></li>
-            <?php
-                if ($user !== "") { // Buttons that only show when logged in
-                    echo /** @lang HTML */
-                    '<li><a style="padding-top: 23px;" href="music.php">Music</a></li>';
-                }
-            ?>
+        <div id="menu-bar">
+            <ul>
+                <li><a class="active" href="index.php" style="font-size: 40px;">SUCB</a></li>
+                <li><a style="padding-top: 23px;" href="news.php">News</a></li>
+                <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
+                <li><a style="padding-top: 23px;" href="about.php">About</a></li>
+                <?php
+                    if ($user !== "") { // Buttons that only show when logged in
+                        echo /** @lang HTML */
+                        '<li><a style="padding-top: 23px;" href="music.php">Music</a></li>';
+                    }
+                ?>
 
 
-            <li><a style="padding-top: 23px;">
-                    <form method="post" href="https://www.google.co.uk/" id="searchsite">
-                        <input type="text" name="search" title="search" style="margin-left: 100px;">
-                        <input type="submit" name="submit" value="Search" href="https://www.google.co.uk/">
-                    </form>
-                    <!-- <button onclick="searchFunction()">Search</button> -->
-                </a></li>
+                <li><a style="padding-top: 23px;">
+                        <form method="post" href="https://www.google.co.uk/" id="searchsite">
+                            <input type="text" name="search" title="search" style="margin-left: 100px;">
+                            <input type="submit" name="submit" value="Search" href="https://www.google.co.uk/">
+                        </form>
+                        <!-- <button onclick="searchFunction()">Search</button> -->
+                    </a></li>
 
-        </ul>
+            </ul>
+        </div>
 
         <div style="background-color: white; float: left; width: 100%; margin-bottom: 0.5cm;">
 
