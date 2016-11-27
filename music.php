@@ -85,7 +85,7 @@ and open the template in the editor.
                     die("Connection failed:" . $conn->connect_error); //FIXME remove after debugging - security risk
                 }
 
-                $inst = $_SESSION["session_instrument_id"]; //Change this out to get the users instrument id with sessions
+                $inst = isset($_SESSION["session_instrument_id"]) ? $_SESSION["session_instrument_id"] : 0; //Change this out to get the users instrument id with sessions
 
                 $sql = "SELECT `name`, `file_location` FROM `Parts` WHERE `instument_id` = '$inst'";
                 $result = $conn->query($sql);
@@ -99,7 +99,10 @@ and open the template in the editor.
                         '<a href="' . $path . '">' . $partName . '</a>';
                     }
                 } else {
-                    echo '<p>There are no pieces available for your instrument yet.</p>';
+
+                    echo $inst < 0 ?
+                        '<p>There are no pieces available for your instrument yet.</p>' :
+                        '<p>You need to be logged in to see this page</p>';
                 }
             ?>
         </div>
