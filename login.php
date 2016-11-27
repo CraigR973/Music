@@ -112,7 +112,6 @@ and open the template in the editor.
 
                     <form action="index.php" method="post">
                         <?php
-                            echo 'Username: ' . $username;
                             echo '<input type="submit" value"proceed"/>';
                         ?>
                     </form>
