@@ -26,15 +26,6 @@
 
         </ul>
 
-        <!--  <p id="demo2"></p>
-
-          <script>
-              function searchFunction() {
-                  var x = document.getElementById("mySearch").innerHTML;
-                  document.getElementById("demo2").innerHTML = x;
-              }
-              </script> -->
-
         <div style="background-color: white; float: left; width: 100%; margin-bottom: 0.5cm;">
 
             <h2>Welcome to the Strathclyde University Concert Band</h2>
@@ -52,7 +43,7 @@
             <div style="float: right; padding-right: 20%;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
                     <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUCB ID or
-                    <a style="color: blue; text-decoration: none;"  href="register.php">Register</a> to see band events
+                    <a style="color: blue; text-decoration: none;" href="register.php">Register</a> to see band events
                 </span>
             </div>
 
@@ -61,15 +52,12 @@
         <div style="margin-left: 15%; margin-right: 15%; display: inline-flex; justify-content: space-between">
             <div style="max-width: 70%">
                 <p><img src="sucb_kelvingrove.jpg" alt="Picture" style="max-width: 80%"></p>
-                <p style="margin-right: 15%; margin-left: 15%;"> Beloved loves knows most enlightenments. Tobaccos sing from loves like mighty captains. Potus
-                    superbe ducunt ad castus brodium. With asparagus drink peanut sauce. Tightly examine a
-                    hur'q.</p>
-                
+                <p style="margin-right: 15%; margin-left: 15%;"> Beloved loves knows most enlightenments. Tobaccos sing from loves like mighty captains. Potus superbe ducunt ad castus brodium. With asparagus drink peanut sauce. Tightly examine a hur'q.</p>
+
             </div>
 
             <div style="max-width: 30%; margin-right: 5%;">
-                <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="600" data-width="400">Tweets by
-                    SUCBOfficial</a>
+                <a class="twitter-timeline" href="https://twitter.com/SUCBOfficial" data-height="600" data-width="400">Tweets by SUCBOfficial</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>

@@ -9,13 +9,13 @@ and open the template in the editor.
         <title>Contact</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet" href="music_style.css"/>
+        <link rel="stylesheet" href="music_style.css"/>
     </head>
 
-      
-<body>
 
-            <ul>
+    <body>
+
+        <ul>
             <li><a class="active" href="index.php" style="font-size: 40px; background-color: black; ">SUCB</a></li>
             <li><a style="padding-top: 23px;" href="news.php">News</a></li>
             <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
@@ -57,17 +57,17 @@ and open the template in the editor.
             <div style="float: right; padding-right: 20%;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
                     <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUCB ID or
-                    <a style="color: blue; text-decoration: none;"  href="register.php">Register</a> to see band events
+                    <a style="color: blue; text-decoration: none;" href="register.php">Register</a> to see band events
                 </span>
             </div>
 
         </div>
-    
-    
+
+
         <div>
             <p>Committee email: committee@sucb.org.uk</p>
             <p>President Email: president@sucb.org.uk</p>
-        
+
         </div>
     </body>
 </html>

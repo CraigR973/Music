@@ -13,8 +13,6 @@ and open the template in the editor.
     <body>
         <div>
             <h1>Welcome to the Music Society Manager</h1>
-            
-            
         </div>
     </body>
 </html>

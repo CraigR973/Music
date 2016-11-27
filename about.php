@@ -9,13 +9,13 @@ and open the template in the editor.
         <title>About</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet" href="music_style.css"/>
+        <link rel="stylesheet" href="music_style.css"/>
     </head>
 
-        
-<body>
 
-            <ul>
+    <body>
+
+        <ul>
             <li><a class="active" href="index.php" style="font-size: 40px; background-color: black; ">SUCB</a></li>
             <li><a style="padding-top: 23px;" href="news.php">News</a></li>
             <li><a style="padding-top: 23px;" href="contact.php">Contact</a></li>
@@ -57,16 +57,16 @@ and open the template in the editor.
             <div style="float: right; padding-right: 20%;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
                     <a style="color: blue; text-decoration: none;" href="login.php">Sign in</a> with your SUCB ID or
-                    <a style="color: blue; text-decoration: none;"  href="register.php">Register</a> to see band events
+                    <a style="color: blue; text-decoration: none;" href="register.php">Register</a> to see band events
                 </span>
             </div>
 
         </div>
-    
+
         <div>
             <p>Strathclyde University Concert Band is a large band, open to all woodwind and brass, percussion or string bass players of all abilities.</p>
 
-            <p>It prides itself in being completely open - so no auditions!  And if you would like to come along but don't have your own instrument, get in touch as the Uni has a number of instruments available for students to borrow: bass clarinet, baritone saxophone, bassoon, tenor horn, French horn, euphonium, tuba and percussion.</p>
+            <p>It prides itself in being completely open - so no auditions! And if you would like to come along but don't have your own instrument, get in touch as the Uni has a number of instruments available for students to borrow: bass clarinet, baritone saxophone, bassoon, tenor horn, French horn, euphonium, tuba and percussion.</p>
 
             <p>Each year, the band pulls off some great performances at venues such as the Barony Hall and the Winter Gardens of the People's Palace (Glasgow Green).</p>
 
