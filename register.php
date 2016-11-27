@@ -14,6 +14,16 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        
+    </style>
     <head>
         <script>
             function validateForm() {
@@ -64,23 +74,25 @@ and open the template in the editor.
         <link rel="stylesheet" href="music_style.css"/>
     </head>
     <body>
-        <div>
-            <h1>Register</h1>
+        <div style="margin-left: 200px; margin-top: 65px; background-color: white; max-width: 400px; padding: 14px 16px; height: 700px;">
+            <h1>SUCB</h1>
+            <h2 style="margin-left: 10px; margin-bottom: 30px;">Register</h2>
+
 
             <form name="registerForm" onsubmit="return validateForm()" method="post" style="padding-right: 100%">
 
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text"/> <br/>
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text"/> <br/>
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password"/> <br/>
-                <label for="confirm">Confirm password</label>
-                <input id="confirm" name="confirm_password" type="password"/> <br/>
+                <label for="username"></label>
+                <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;"/> <br/>
+                <label for="name"></label>
+                <input id="name" name="name" type="text" placeholder="Name" style="margin-bottom: 30px;"/> <br/>
+                <label for="password"></label>
+                <input id="password" name="password" type="password" placeholder="Password" style="margin-bottom: 30px;"/> <br/>
+                <label for="confirm"></label>
+                <input id="confirm" name="confirm_password" type="password" placeholder="Confirm Password" style="margin-bottom: 30px;"/> <br/>
 
-                <label for="section">Section</label>
+                <label for="section"><label>
                 <select id="section" name="section">
-                    <option value=0 selected disabled>Please select your section.</option>
+                    <option value=0 selected disabled>Instrument</option>
                     <option value=1>Conductor</option><!-- TODO: Make this require a "master" password-->
                     <option value=2>Flute</option>
                     <option value=3>Oboe</option>
@@ -96,11 +108,14 @@ and open the template in the editor.
                     <option value=13>Percussion</option>
                     <option value=14>Keyboard/Harp</option>
                 </select>
-
-                <input type="submit"/>
+                <input type="submit" value="Register" style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
 
 
             </form>
+            
+            <p style="width: 200px;">Already registered?</p>
+            <a href="login.php" style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Sign in</a>
+            
 
             <?php
                 //connect to the database now that we know we have enough to submit
@@ -123,7 +138,7 @@ and open the template in the editor.
 
                 //check form is valid
                 if (empty($username) || empty($name) || empty($password) || $section === 0) {
-                    die("You need to provide a username along with your name, a password and section");
+                    die();
                 }
 
 

@@ -17,6 +17,9 @@ and open the template in the editor.
     <style>
         body {
             background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
         
         
