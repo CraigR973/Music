@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (isset($_SESSION["session_user"])) {
+    $user = $_SESSION["session_user"];
+} else {
+    $user = "";
+}
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -5,6 +14,13 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    <style>
+        body {
+            background-image: url("background.jpg");
+        }
+        
+        
+    </style>
     <head>
         <script>
             function validateForm() {
@@ -34,16 +50,23 @@ and open the template in the editor.
         <link rel="stylesheet" href="music_style.css"/>
     </head>
     <body>
-        <div>
-            <h1>Sign in</h1>
+        <div style="margin-left: 200px; margin-top: 65px; background-color: white; max-width: 400px; padding: 14px 16px; height: 500px;">
+            
+            <h1>SUCB</h1>
+            <h2 style="margin-left: 10px; margin-bottom: 30px;">Sign in</h2>
             <form name="loginForm" onsubmit="return validateForm()" method="post" style="padding-right: 100%">
 
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text"/> <br/>
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password"/> <br/>
-                <input type="submit">
+                <label for="username"></label>
+                <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;"/> <br/>
+                <label for="password"></label>
+                <input id="password" name="password" type="password" placeholder="Password" style="margin-bottom: 30px;"/> <br/>
+                <input type="submit" value="Sign in" style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
             </form>
+            
+            <p>Don't have a SUCB account yet?</p>
+            <a href="register.php" style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Register now</a>
+            
+            
 
             <?php
                 //connect to the database now that we know we have enough to submit
@@ -64,7 +87,7 @@ and open the template in the editor.
 
                 //check form is valid
                 if (empty($username)) {
-                    die("You need to provide your username");
+                    die();
                 }
 
 
@@ -73,6 +96,7 @@ and open the template in the editor.
                 $result = $conn->query($sql);
 
                 if ($result->num_rows == 1) {
+                    $_SESSION["session_user"] = $username;
                     echo "<p>You've successfully logged in</p>";
 
                     ?>
