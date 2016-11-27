@@ -40,7 +40,7 @@
                 if ($result->num_rows == 1) {                   
                     $row = mysqli_fetch_row($result); 
                         $path = array_values($row)[0];
-                        echo '<a href="<'.$$path.'>">Text</a>';
+                        echo '<a href="<'.$path.'>">Text</a>';
                 }else{
                     echo '<p>There is no piece for your instrument yet</p>';
                 }
