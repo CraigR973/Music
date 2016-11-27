@@ -60,8 +60,13 @@ and open the template in the editor.
                 <input id="username" name="username" type="text" placeholder="Username" style="margin-bottom: 30px;"/> <br/>
                 <label for="password"></label>
                 <input id="password" name="password" type="password" placeholder="Password" style="margin-bottom: 30px;"/> <br/>
-                <input type="submit" value="Sign in">
+                <input type="submit" value="Sign in" style="width: 375px; align-content: center; background-color: #C12828; color: white; height: 50px;">
             </form>
+            
+            <p>Don't have a SUCB account yet?</p>
+            <a href="register.php" style="color: #C12828; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 300;">Register now</a>
+            
+            
 
             <?php
                 //connect to the database now that we know we have enough to submit
