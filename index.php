@@ -28,9 +28,9 @@
             
             
             <li><a style="padding-top: 23px;">
-                <form method="post" action="search.php?go" id="searchsite">
+                <form method="post" href="https://www.google.co.uk/" id="searchsite">
                     <input type="text" name="search" title="search" style="margin-left: 100px;">
-                    <input type="submit" name="submit" value="Search">
+                    <input type="submit" name="submit" value="Search" href="https://www.google.co.uk/">
                 </form>
                 <!-- <button onclick="searchFunction()">Search</button> -->
                 </a></li>

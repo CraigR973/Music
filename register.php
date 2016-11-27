@@ -68,13 +68,16 @@ and open the template in the editor.
                 return (inputErrors === "");
             }
         </script>
+        <link rel="icon"
+              type="image/jpeg"
+              href="HeaderLogo.jpg">
         <title>Register</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="music_style.css"/>
     </head>
     <body>
-        <div style="margin-left: 200px; margin-top: 65px; background-color: white; max-width: 400px; padding: 14px 16px; height: 700px;">
+        <div style="margin-left: 200px; margin-top: 65px; background-color: white; max-width: 400px; padding: 14px 16px; height: 1000px;">
             <h1>SUCB</h1>
             <h2 style="margin-left: 10px; margin-bottom: 30px;">Register</h2>
 

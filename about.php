@@ -40,7 +40,7 @@ and open the template in the editor.
             
             
             <li><a style="padding-top: 23px;">
-                <form method="post" action="search.php?go" id="searchsite">
+                <form method="post" action="https://www.google.co.uk/ id="searchsite">
                     <input type="text" name="search" title="search" style="margin-left: 100px;">
                     <input type="submit" name="submit" value="Search">
                 </form>
@@ -51,17 +51,9 @@ and open the template in the editor.
 
         <div style="background-color: white; float: left; width: 100%; margin-bottom: 0.5cm;">
 
-            <h2>Whoe are the Strathclyde University Concert Band</h2>
+            <h2>Who are the Strathclyde University Concert Band</h2>
 
 
-            <p id="date" style="float: left; margin-left: 20%;"></p>
-
-            <script>
-                var d = new Date();
-                var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-                document.getElementById("date").innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()];
-            </script>
             
             <div style="float: right; padding-right: 20%; padding-top: 30px; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;">
                 <span style="float: right; align-items: flex-end; padding-bottom: 10px; width: 100%;">
@@ -71,8 +63,7 @@ and open the template in the editor.
                             "<a style='color: blue; text-decoration: none;' href='login.php'>Sign in</a> with your SUCB ID or
                              <a style='color: blue; text-decoration: none;' href='register.php'>Register</a> to see band events";
                         } else {
-                            echo /** @lang HTML */
-                            "Welcome back, $user!";
+                            
                         }
                     ?>
 
