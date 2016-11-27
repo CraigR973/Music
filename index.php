@@ -60,7 +60,7 @@
                              <a style='color: blue; text-decoration: none;' href='register.php'>Register</a> to see band events";
                         } else {
                             echo /** @lang HTML */
-                            "Welcome back, $user!";
+                            "Welcome back, $user";
                         }
                     ?>
 
